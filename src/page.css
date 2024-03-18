@@ -1,0 +1,88 @@
+/*
+ * IMPORTING THE FONTS
+ * ---------------------------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+/* ---------------------------------------------------------------------------- */
+
+* {
+    margin: 0px;
+    border: none;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    /* Set a theme chosen by the user later ... */
+    background-image: url('/assets/images/wall.jpg');
+    background-size: cover;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#grids {
+    box-sizing: content-box;
+
+    padding: 3vh;
+    border: 4vh solid #6E6D6E;
+    border-radius: 0.25rem;
+    height: 80vh;
+    width: 80vh;
+    margin: 3vh 0vh 3vh 0vh;
+    position: relative;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    background-color: #FEEFDE;
+}
+
+#sidePanel {
+    box-sizing: content-box;
+    height: 94vh;
+    width: 94vh;
+    margin: 3vh 0vh 3vh 0vh;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+#grid, #back-image {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80vh;
+    height: 80vh;
+}
+
+#grid {
+    z-index: 2;    
+}
+
+#back-image {
+    z-index: 1;
+    position: absolute;
+    background-size:cover;
+    filter: blur(1px);
+    filter: brightness(0.5);
+}
+
+#name {
+    font-family: 'Arvo', serif;
+    font-size: 5em;
+    font-style: normal;
+    color: #167D7F;
+}
+
+#quote {
+    font-family: 'Abril Fatface', serif;
+    font-size: 2em;
+    font-style: italic;
+    color: #29A0B1;
+}

@@ -1,0 +1,194 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #DAE3E6;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1, footer {
+    width: 100%;
+    box-sizing: content-box;
+    padding: 1em 0em 1em 0em;
+    border-radius: 0.5rem;
+    background-color: #6E6D6E;
+}
+
+h1 {
+    font-family: "Iceland", sans-serif;
+    text-align: center;
+    font-size: 3em;
+
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-family: "Caprasimo", cursive;
+    text-align: center;
+    font-size: 5vh;
+    font-style: italic;
+    color: #05445E;
+}
+
+#name {
+    box-sizing: content-box;
+    margin: 1em 0 1em 0;
+    width: 100%;
+    height: 3em;
+
+    font-family: "Caprasimo", cursive;
+    text-align: center;
+    font-size: 2em;
+
+    background-color: transparent;
+    border: 0px solid transparent;
+    border-bottom: 3px solid #6E6D6E;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
+
+#panel,
+#grids,
+#colorPalete {
+    box-sizing: content-box;
+
+    padding: 10px;
+    border: 2px solid #6E6D6E;
+    height: 500px;
+    position: relative;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    background-color: #FEEFDE;
+}
+
+#grid, #trans-grid, #back-image {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 500px;
+}
+
+#grid {
+    z-index: 2;    
+}
+
+#trans-grid {
+    z-index: 1;
+    position: absolute;
+}
+
+#back-image {
+    z-index: 1;
+    position: absolute;
+    background-image: url('../assets/images/everest.jpg');
+    background-size:cover;
+    opacity: 90%;
+}
+
+.box, .tbox {
+    background-color: transparent;
+    border: none;
+}
+
+#panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#colorPalete {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 300px;
+}
+
+#panel {
+    border-radius: 1rem 0rem 0rem 1rem;
+}
+
+#colorPalete {
+    border-radius: 0rem 1rem 1rem 0rem;
+    margin-bottom: 5px;
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.icons, .colour {
+    height: 2em;
+    width: 2em;
+}
+
+.colour, #addColor {
+    border-radius: 100%;
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+.potraitBack{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.subContain {
+    height: 300px;
+    width: 300px;
+    border-radius: 0.5rem;
+    box-sizing: content-box;
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.images {
+    width: 100%;
+    height: 100%;
+    opacity: 75%;
+
+    position: absolute;
+    z-index: 1;
+}
+
+.text{
+    z-index: 2;
+    position: absolute;
+
+    font-family: "Iceland", sans-serif;
+    font-size: 3em;
+    margin-top: 75%;
+    margin-left: 5%;
+}
+
+.subContain:hover > .images {
+    opacity: 100%;
+}
+
+.subContain:hover > .text {
+    color: white;
+    font-size: 3.5em;
+}
+
+footer {
+    font-family: "Manrope", sans-serif;
+    font-size: larger;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}

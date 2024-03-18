@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <title>PIXELATE-POTRANATOR</title>
+
+        <link rel="stylesheet" href="assets/fonts/fonts.css" />
+        <link rel="stylesheet" href="style.css" />
+
+        <!-- This script is used for the generation of the potrait by the user -->
+        <script src="scripts/textEffect.js" defer></script>
+        <script src="scripts/buildPotrait.js" defer></script>
+        <script src="scripts/redirect.js" defer></script>
+    </head>
+
+    <body>        
+        <h1>PIXELATE-POTRANATOR</h1>
+
+        <input type="text" name="name" id="name" placeholder="Enter Your Name Here..." />
+
+        <h2>Draw a potrait of yourself through pixels</h2>
+        <div class="container">
+            <div id="panel">
+                <img src="assets/images/icons/grid_view_FILL0_wght400_GRAD0_opsz24.svg" class="icons" id="changeSize" draggable="false" />
+                <img src="assets/images/icons/format_paint_FILL0_wght400_GRAD0_opsz24.svg" class="icons" id="colorMode" draggable="false" />
+                <img src="assets/images/icons/ink_eraser_FILL0_wght400_GRAD0_opsz24.svg" class="icons" id="eraserMode" draggable="false" />
+                <img src="assets/images/icons/layers_clear_FILL0_wght400_GRAD0_opsz24.svg" class="icons" id="clearMode" draggable="false" />
+            </div>
+            <div id="grids">
+                <div id="trans-grid"></div>
+                <div id="grid"></div>
+            </div>
+            <div id="colorPalete">
+                <img src="assets/images/icons/loupe_FILL0_wght400_GRAD0_opsz24.svg" class="icons" id="addColor" />
+            </div>
+        </div>
+
+        <h2>Pick a Theme</h2>
+
+        <div class="potraitBack">
+            <a href="src/page.html">
+                <div class="subContain" id="space">
+                    <img src="assets/images/space.jpg" class="images" />
+                    <div class="text">SPACE</div>
+                </div>
+            </a>
+            <a href="src/page.html">
+                <div class="subContain" id="amazon">
+                    <img src="assets/images/amazon.jpg" class="images" />
+                    <div class="text">AMAZON</div>
+                </div>
+            </a>
+            <a href="src/page.html">
+                <div class="subContain" id="everest">
+                    <img src="assets/images/everest.jpg" class="images" />
+                    <div class="text">EVEREST</div>
+                </div>
+            </a>
+            <a href="src/page.html">
+                <div class="subContain" id="desert">
+                    <img src="assets/images/desert.jpg" class="images" />
+                    <div class="text">DESERT</div>
+                </div>
+            </a>
+            <a href="src/page.html">
+                <div class="subContain" id="city">
+                    <img src="assets/images/city.jpg" class="images" />
+                    <div class="text">CITY</div>
+                </div>
+            </a>
+            <a href="src/page.html">
+                <div class="subContain" id="country">
+                    <img src="assets/images/country.jpg" class="images" />
+                    <div class="text">COUNTRY</div>
+                </div>
+            </a>
+            <a href="src/page.html">
+                <div class="subContain" id="home">
+                    <img src="assets/images/home.jpg" class="images" />
+                    <div class="text">HOME</div>
+                </div>
+            </a>
+            <a href="src/page.html">
+                <div class="subContain" id="terrain">
+                    <img src="assets/images/terrain.jpg" class="images" />
+                    <div class="text">TERRAIN</div>
+                </div>
+            </a>
+        </div>
+
+        <footer>
+            Yeshua D&apos;Costa, 2023&copy;
+            <br />
+            <a
+            target="_top"
+            href="https://glitch.com/edit/#!/pixelate-potranator"
+            >
+            <img
+              src="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2FLogo_Color.svg?v=1618199565140"
+              alt=""
+            />
+            Remix on Glitch
+          </a>
+        </footer>
+    </body>
+</html>
